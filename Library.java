@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Ch_52 {
+public class Library {
     ArrayList<String> s= new ArrayList<>();
     ArrayList<String> iss=new ArrayList<>();
     public void addBook(String book){
@@ -32,13 +32,16 @@ public class Ch_52 {
     }
 
     public static void main(String[] args) {
-        Ch_52 obj=new Ch_52();
+        Library obj=new Library();
+        //adding of books
         obj.addBook("MARVEL");
         obj.addBook("META-VERSE");
         obj.addBook("DC");
         obj.addBook("BHRAMASTHRA");
         obj.showAvailableBooks();
+        //returning the book
         obj.returnBook("OKOKJE");
+        //issuing the book
         obj.issueBook("META-VERSE");
         obj.showAvailableBooks();
         obj.issueBook("META-VERSE");
